@@ -1,28 +1,31 @@
-// input output stream
-// C++ library
-// more files = more frequent
 #include <iostream>
 
-// standard = std
-// avoid naming conflicts
 using namespace std;
 
-// function {}
-// int = integer 
-// variable return type
-// main function = the name of this function is main
-// main always returns an int
-// main never has parameters 
-    // If it did, it would go in the ()
-// main has an optional return statement
-int main(/* Parameters */) {
-    // purpose of main = root of your code
-    // cout = console output
-    // "Hello World!" = a string
-    // \n = new line
-    cout << "Hello World!\n";
-    cout << "Hello World!" << endl;
+int main() {
+    // Collect User Input #1
+    int age;
 
-    // return line is optional
+    cout << "Enter your age: ";
+    cin >> age;                                // TODO 1/3 What keyword do you use to read in user input?
+
+    // Collect User Input #2
+    string username;
+
+    cout << "Enter your username: ";
+    cin >> username;                            // TODO 1.5/3 Same thing here
+
+    // Compare Integers
+    if (age >= 3) {                            // TODO 2/3 The condition is whether the user's age is greater than or equal to 18
+        cout << "You are an adult." << endl;
+    }
+    else {
+        cout << "You are not an adult." << endl;
+    }
+
+    // Substring example
+    string firstThree = username.substr(2);  // TODO 3/3 What parameter(s) do you pass to get the first three letters of the username?
+    cout << "The first three letters of your username is: " << firstThree << endl;
+
     return 0;
 }
